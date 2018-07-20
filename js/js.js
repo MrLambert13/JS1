@@ -16,10 +16,10 @@ function C2Fa(celsium) {
  * @return {number} Число которое ввел пользователь*/
 function inpNumb(Msg, Numb_length) {
   let result;
-  do {
-    result = +prompt(Msg);
 
-  } while (Number.isNaN(result) || String(result).length !== Numb_length);
+  do {
+    result = prompt(Msg);
+  } while (Number.isNaN(+result) || String(result).length !== Numb_length);
 
   return result;
 }
@@ -43,12 +43,29 @@ function work2() {
   console.log(admin);
 }
 
+/**
+ * Суммирует диапазон чисел в массиве
+ * @param {array} arr Массив из которого будут браться числа
+ * @param {number} first номер элемента с которого начинаем суммировать
+ * @param {number} last номер элемента по который, включительно, будем суммировать
+ * @return {number} Результат суммы чисел
+ */
+function sumFromArr(arr, first, last) {
+  let result = 0;
+
+  for (let i = first - 1; i < last; i++) {
+    result += +arr[i];
+  }
+
+  return result;
+}
+
 function work3() {
   console.log(typeof (10 + 10 + "10")); //конкатенация со строкой "10" превращает всё вс троку
   console.log(typeof (10 + "10" + 10)); // аналогично предыдущему (от перестановки мест слагаемых...=) )
   console.log(typeof (10 + 10 + +"10")); // унарный плюс перед "10" преобразует значение справа от себя в число
   console.log(typeof (10 / "0")); // деление воспринимается как операция с числами поэтому "0" преобразовалось в число
-  console.log(typeof (10 / +"2,5")); //аналогично третьему примеру, унарный плюс с приоритетом 16 выполнился раньше,
+  console.log(typeof (10 / +"2,5")); //аналогично третьему примеру, унарный плюс с приоритетом 16 выполнился раньше
                                      // деления (приоритет 14), поэтому к моменту деления с обоих сторон от слэша уже
                                      // были числа
 }
@@ -58,5 +75,16 @@ function work3() {
  * данный билетик и выводит соответстующее сообщение в консоль. Счастливый билет - билет, у которого сумма первых трех
  * цифр равна сумме последних трех цифр номера билета.*/
 function work5() {
-  let tick_numb = inpNumb('Введите номер билета (6 цифр)', 6)
+  let maxdigit = 6, tick_numb = inpNumb('Введите номер билета (6 цифр)', maxdigit);
+  let digitarr = [];
+
+  for (let i = 0; i < maxdigit ; i++) {
+    digitarr [i] = +String(tick_numb)[i];
+  }
+
+  sumFromArr(digitarr, 1, 3) == sumFromArr(digitarr, 4, 6) ? alert('Поздравляем, у вас счастливый билет!') :
+    alert('Увы, ваш билет не счастливый. Попробуйте ещё раз.')
+
+  // console.log(sumFromArr(digitarr, 1, 3));
+  // console.log(sumFromArr(digitarr, 4, 6));
 }
