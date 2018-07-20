@@ -17,9 +17,15 @@ function C2Fa(celsium) {
 function inpNumb(Msg, Numb_length) {
   let result;
 
-  do {
-    result = prompt(Msg);
-  } while (Number.isNaN(+result) || String(result).length !== Numb_length);
+  if (Numb_length > 0) {
+    do {
+      result = prompt(Msg);
+    } while (Number.isNaN(+result) || String(result).length !== Numb_length);
+  } else {
+    do {
+      result = prompt(Msg);
+    } while (Number.isNaN(+result));
+  }
 
   return result;
 }
