@@ -5,11 +5,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework_1</title>
+  <link rel="stylesheet" href="sass/style.css">
 </head>
 
 <body>
+  <div class="block">
+    <ul class="menu">
+      <li><input class="btn" onclick="work1()" type="button" value="Задание 1" /></li>
+      <li><input class="btn" onclick="work2()" type="button" value="Задание 2" /></li>
+      <li><input class="btn" onclick="work3()" type="button" value="Задание 3" /></li>
+
+      <li class="menu__relative"><input class="btn" type="button" value="Задание 4" />
+
+        <div class="answer">
+
+          <p  class="answer__pg">
+            <b>Async</b> используется для того, чтобы указать браузеру, что скрипт может быть выполнен асинхронно.
+            Парсеру HTML нет необходимости останавливаться, когда он достигает тега для загрузки и выполнении.
+            Выполнение может произойти после того, как скрипт будет получен параллельно с разбором документа.
+          </p>
+          <img src="img/async.png" alt="Async photo">
+
+          <p class="answer__pg">
+            Атрибут <b>defer</b> указывает браузеру, что скрипт должен быть выполнен после того, как HTML-документ
+            будет полностью разобран.
+          </p>
+          <img src="img/defer.png" alt="Defer photo">
+
+        </div>
+
+      </li>
+
+      <li><input class="btn" onclick="work5()" type="button" value="Задание 5" /></li>
+    </ul>
+  </div>
 
   <script src="js/js.js"></script>
+
 </body>
 
 </html>

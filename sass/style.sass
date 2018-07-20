@@ -1,0 +1,38 @@
+*
+  margin: 0
+  padding: 0
+
+.block
+  text-align: center
+  padding-top: 10%
+
+.menu
+  list-style-type: none
+  li
+    margin: 15px 0
+  &__relative
+    position: relative
+    &:active .answer
+      display: flex
+
+.btn
+  padding: 5px 15px
+  font-size: 15px
+  &:hover
+    background-color: #6dff48
+    font-weight: 700
+
+
+.answer
+  display: none
+
+  padding: 15px
+  outline: 1px solid black
+  background-color: #bbbbbb
+  position: absolute
+  margin: 0 auto
+  flex-direction: column
+  align-items: center
+  &__pg
+    width: 80%
+
