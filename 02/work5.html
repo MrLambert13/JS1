@@ -2,6 +2,70 @@
 <script>
   "use strict";
 
+  /*
+  Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+  где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+  переданного значения операции (использовать switch) выполнить одну из арифметических операций
+  (использовать функции из задания 4) и вернуть полученное значение.
+  */
 
+  /**
+   * Do some operation of list*/
+  function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+      case 'Summ':
+        return getSumm(arg1, arg2);
+      case 'Diff':
+        return getDiff(arg1, arg2);
+      case 'Mult':
+        return getMult(arg1, arg2);
+      case 'Div':
+        return getDiv(arg1, arg2);
+      default:
+        return ('Error');
+    }
+  }
+
+  /**
+   * Returns the sum of two numbers
+   * @param {number} x First number
+   * @param {number} y Two number
+   * @return {number} Sum of x and y*/
+  function getSumm(x, y) {
+    return x + y;
+  }
+
+  /**
+   * Returns the difference of two numbers
+   * @param {number} x First number
+   * @param {number} y Two number
+   * @return {number} Difference of x and y */
+  function getDiff(x, y) {
+    return x - y;
+  }
+
+  /**
+   * Returns the multiplication  of two numbers
+   * @param {number} x First number
+   * @param {number} y Two number
+   * @return {number} multiplication of x and y */
+  function getMult(x, y) {
+    return x * y;
+  }
+
+  /**
+   * Returns the division  of two numbers
+   * @param {number} x First number
+   * @param {number} y Two number
+   * @return {number} division  of x and y */
+  function getDiv(x, y) {
+    return x / y;
+  }
+
+  console.log(mathOperation(2, 8, 'Summ'));
+  console.log(mathOperation(40, 30, 'Diff'));
+  console.log(mathOperation(2.5, 4, 'Mult'));
+  console.log(mathOperation(20, 2, 'Div'));
+  console.log(mathOperation(20, 2));
 
 </script>
