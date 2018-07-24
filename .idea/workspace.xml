@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/02/work6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02/work5.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/work5.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +16,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="work1.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="work1.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/02/work1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
+                <state relative-caret-position="544">
                   <caret line="29" selection-start-line="29" selection-end-line="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/01/js/js.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1041">
+                  <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -28,8 +37,8 @@
           <file leaf-file-name="work2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/02/work2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+                <state relative-caret-position="-7">
+                  <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -41,23 +50,32 @@
           <file leaf-file-name="work4.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/02/work4.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                <state relative-caret-position="-7">
+                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="work5.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="work5.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/02/work5.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="727">
-                  <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+                <state relative-caret-position="-7">
+                  <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
                   <folding>
                     <element signature="e#468#616#0" />
                     <element signature="e#669#832#0" />
                     <element signature="e#885#1057#0" />
                     <element signature="e#1110#1271#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="work6.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/02/work6.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="676">
+                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
                 </state>
               </provider>
             </entry>
@@ -95,6 +113,7 @@
         <option value="$PROJECT_DIR$/02/work3.html" />
         <option value="$PROJECT_DIR$/02/work4.html" />
         <option value="$PROJECT_DIR$/02/work5.html" />
+        <option value="$PROJECT_DIR$/02/work6.html" />
       </list>
     </option>
   </component>
@@ -165,7 +184,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -201,7 +220,7 @@
       <workItem from="1532070290169" duration="18610000" />
       <workItem from="1532089117268" duration="701000" />
       <workItem from="1532324009300" duration="5000" />
-      <workItem from="1532413631095" duration="6344000" />
+      <workItem from="1532413631095" duration="8853000" />
     </task>
     <task id="LOCAL-00001" summary="ЦЕльсии в фаренгейты">
       <created>1532068305376</created>
@@ -273,17 +292,24 @@
       <option name="project" value="LOCAL" />
       <updated>1532419473243</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Homework 2-5">
+      <created>1532420617165</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532420617165</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30248000" />
+    <option name="totallyTimeSpent" value="32757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="67" width="1834" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20352036" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20352036" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007225" side_tool="true" weight="0.3295711" />
@@ -317,7 +343,8 @@
     <MESSAGE value="Homework 2-2" />
     <MESSAGE value="Homework 2-3" />
     <MESSAGE value="Homework 2-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 2-4" />
+    <MESSAGE value="Homework 2-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 2-5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,22 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02/work2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02/work1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="-7">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -486,21 +499,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02/work4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="-7">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02/work5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="-7">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
           <folding>
             <element signature="e#468#616#0" />
             <element signature="e#669#832#0" />
             <element signature="e#885#1057#0" />
             <element signature="e#1110#1271#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02/work1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1041">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02/work6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
