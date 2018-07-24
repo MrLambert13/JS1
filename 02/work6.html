@@ -15,26 +15,36 @@
    * @param {number} count How much money
    * @return {void} Nothing */
   function putMoney(count) {
-    let lastchar = count % 10;
-    let partMsg
+    let lastchar = count % 100;
+    let partMsg;
     switch (lastchar) {
-      case 1:
-        partMsg = 'рубль';
-        break;
-      case 2:
-      case 3:
-      case 4:
-        partMsg = 'рубля';
+      case 11:
+      case 12:
+      case 13:
+      case 14:
+        partMsg = 'рублей';
         break;
       default:
-        partMsg = 'рублей';
+        switch (lastchar % 10) {
+          case 1:
+            partMsg = 'рубль';
+            break;
+          case 2:
+          case 3:
+          case 4:
+            partMsg = 'рубля';
+            break;
+          default:
+            partMsg = 'рублей';
+        }
     }
-
     return `Ваша сумма в ${count} ${partMsg} успешно зачислена.`;
   }
 
   console.log(putMoney(101));
   console.log(putMoney(10020));
   console.log(putMoney(120104));
+  console.log(putMoney(111));
+  console.log(putMoney(212));
 
 </script>
