@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/02/work1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02/work3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/async.png" beforeDir="false" afterPath="$PROJECT_DIR$/01/img/async.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/defer.png" beforeDir="false" afterPath="$PROJECT_DIR$/01/img/defer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/01/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/01/sass/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/01/sass/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/01/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/work2.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/work2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,17 +14,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="work1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02/work1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="work1.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/02/work1.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/01/js/js.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="work2.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/02/work2.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="work3.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/02/work3.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +86,8 @@
         <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/js/js.js" />
         <option value="$PROJECT_DIR$/02/work1.html" />
+        <option value="$PROJECT_DIR$/02/work2.html" />
+        <option value="$PROJECT_DIR$/02/work3.html" />
       </list>
     </option>
   </component>
@@ -93,6 +124,17 @@
             <path>
               <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS1" type="462c0819:PsiDirectoryNode" />
+              <item name="01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS1" type="462c0819:PsiDirectoryNode" />
+              <item name="01" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS1" type="462c0819:PsiDirectoryNode" />
               <item name="02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -119,6 +161,9 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\JS1\02" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\JS1\01" />
     </key>
@@ -149,7 +194,7 @@
       <workItem from="1532070290169" duration="18610000" />
       <workItem from="1532089117268" duration="701000" />
       <workItem from="1532324009300" duration="5000" />
-      <workItem from="1532413631095" duration="2207000" />
+      <workItem from="1532413631095" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="ЦЕльсии в фаренгейты">
       <created>1532068305376</created>
@@ -193,17 +238,31 @@
       <option name="project" value="LOCAL" />
       <updated>1532089798307</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Homework1 profit">
+      <created>1532416100537</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1532416100537</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Homework 2-2">
+      <created>1532416364385</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532416364385</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26111000" />
+    <option name="totallyTimeSpent" value="27402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="67" width="1834" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20352036" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20352036" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007225" side_tool="true" weight="0.3295711" />
@@ -234,7 +293,8 @@
     <MESSAGE value="ЦЕльсии в фаренгейты" />
     <MESSAGE value="5 задание" />
     <MESSAGE value="Homework1 profit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework1 profit" />
+    <MESSAGE value="Homework 2-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 2-2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -346,13 +406,6 @@
     <entry file="file://$PROJECT_DIR$/01/img/defer.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/01/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01/sass/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -379,8 +432,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02/work1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02/work2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02/work3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
