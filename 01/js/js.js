@@ -27,7 +27,7 @@ function inpNumb(Msg, Numb_length) {
     } while (Number.isNaN(+result));
   }
 
-  return result;
+  return +result;
 }
 
 /**
@@ -88,8 +88,9 @@ function work5() {
     digitarr [i] = +String(tick_numb)[i];
   }
 
-  sumFromArr(digitarr, 1, 3) == sumFromArr(digitarr, 4, 6) ? alert('Поздравляем, у вас счастливый билет!') :
-    alert('Увы, ваш билет не счастливый. Попробуйте ещё раз.')
+  sumFromArr(digitarr, 1, 3) === sumFromArr(digitarr, 4, 6)
+      ? alert('Поздравляем, у вас счастливый билет!')
+      : alert('Увы, ваш билет не счастливый. Попробуйте ещё раз.');
 
   // console.log(sumFromArr(digitarr, 1, 3));
   // console.log(sumFromArr(digitarr, 4, 6));
