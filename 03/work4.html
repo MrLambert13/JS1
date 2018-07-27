@@ -2,5 +2,30 @@
 <script>
     "use strict";
 
+    /**
+     * Проверка числа на простоту
+     * @param {number} x Число передаваемое на проверку
+     * @returns {boolean} Возврат true если число простое, false если нет.
+     */
+    function testnumb(x) {
+        for (let i = 2; i * i <= x; i++) {
+            if (x % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    let i = 0;
+
+    while (i <= 100) {
+        if (i < 2) {
+            i++;
+            continue;
+        }
+        if (testnumb(i)) {
+            console.log(i);
+        }
+        i++;
+    }
 </script>

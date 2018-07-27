@@ -2,5 +2,61 @@
 <script>
     "use strict";
 
+    /**
+     * Вычисляет сумму всех элементов массива
+     * @param {number[]} somearray Принимает массив
+     * @returns {number} Сумма элементов массива
+     */
+    function getSumm(somearray) {
+        let summ = 0;
+        for (const i of somearray) {
+            summ += i;
+        }
+        return summ;
+    }
+
+    /**
+     * Находим индекс массива, у которого сумма всех чисел максимальна.
+     * @param {number[]} somearray Принимает двумерный массив
+     * @returns {number} Возвращает индекс массива в котором сумма всех чисел максимальна
+     */
+    function getMax(somearray) {
+        let max = 0;
+
+        for (const i in somearray) {
+            if (getSumm(somearray[i]) > getSumm(somearray[max])) {
+                max = i;
+            }
+        }
+        return max;
+    }
+
+    /**
+     * Находит минимальный элемент в массиве
+     * @param {number[]} somearray Принимаем массив
+     * @returns {number} возвращаем значение минимальное
+     */
+    function getMinElement(somearray) {
+        let min = somearray[0];
+
+        for (const i of somearray) {
+            if (i < min) {
+                min = i;
+            }
+        }
+        return min;
+    }
+
+    const arr = [
+        [2, 4, 6],
+        [1, 5, 10],
+        [7, 4, 1],
+    ];
+
+    let idx = getMax(arr);
+
+    console.log(idx);
+    console.log(getMinElement(arr[idx]));
+
 
 </script>
