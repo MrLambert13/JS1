@@ -19,10 +19,12 @@
     let i = 0;
 
     while (i <= 100) {
+        //0 и 1 не являются простыми числами
         if (i < 2) {
             i++;
             continue;
         }
+
         if (testnumb(i)) {
             console.log(i);
         }

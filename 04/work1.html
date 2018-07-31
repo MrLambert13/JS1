@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<script>
+  "use strict";
+
+  /**
+   * Функция обеспечивает ввод целого числа от 0 до 999 либо сообщает об ошибке
+   * и прерывает своё выполнение вернув undefined
+   * @returns {int} возвращает целое число от 0 до 999 либо ничего не возвращает
+   */
+  function inpNumbFrom_0_To_999() {
+    let result = prompt('Введите целое число от 0 .. до 999:');
+    //console.log(typeof(result));
+
+    if (isNaN(+result)) {
+      alert(`Эй, чувак, ну '${result}' даже близко не число! Я сваливаю. =(`);
+      return;
+    }
+
+    if (!Number.isInteger(+result)) {
+      alert(`${result} - это между прочим не ЦЕЛОЕ число, прощай!`);
+      return;
+    }
+
+
+    if (+result < 0 || +result > 999) {
+      alert(`${result} - по твоему в диапазоне от 0 до 999? *рукалицо*`);
+      return;
+    } else {
+      return +result;
+    }
+  }
+
+
+  const digital = {
+    firstDigit: null,
+    secondDigit: null,
+    thirdDigit: null,
+
+    /**
+     * Преобразует число в объект по разрядам.
+     * @return {void}
+     */
+    putDigital() {
+      let _digit = inpNumbFrom_0_To_999();
+
+      if (_digit !== undefined) {
+        this.firstDigit = _digit % 10 ;
+        this.secondDigit = parseInt(_digit % 100 / 10)  ;
+        this.thirdDigit = parseInt(_digit / 100);
+      }
+    },
+
+    /**
+     * Выводит хранимое число.
+     * @return {void}
+     */
+    getDigital () {
+      console.log(digital);
+      console.log (`Число ${digital.thirdDigit}${digital.secondDigit}${digital.firstDigit}.`);
+      console.log(`Единицы: ${digital.firstDigit}, десятки: ${digital.secondDigit}, сотни: ${digital.thirdDigit}.`);
+    }
+  };
+
+  digital.putDigital();
+  digital.getDigital();
+
+</script>
