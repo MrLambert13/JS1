@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Кто хочет стать миллионером?</title>
+</head>
+<body>
+<script>
+  "use strict";
+
+  /**
+   * Массив с объектами вопросов к игре?
+   * @property {Object} {} Даже не знаю как описывать
+   */
+  const allQuestions = [
+    /**
+     * Объект с вопросом
+     * @property {string} question Текст вопроса
+     * @property {object} variantsOfAnswer Варианты ответа к данному вопросу
+     * @property {string} trueAnswer Верный вариант ответа
+     */
+    {
+      question: 'Нужно ли писать jsdoc для объектов?',
+      variantsOfAnswer: {
+        a: 'Да',
+        b: 'Не знаю',
+        c: 'Зависит от сложности объекта',
+        d: 'Нет',
+      },
+      trueAnswer: 'a',
+    },
+
+    {
+      question: 'Сколько переменных можно объявить в программе?',
+      variantsOfAnswer: {
+        a: 'Не больше 10',
+        b: 'Любое количество',
+        c: 'Только 666 штук',
+        d: 'Нельзя объявлять переменные',
+      },
+      trueAnswer: 'b',
+    },
+
+    {
+      question: 'Что делал слон когда пришел на поле он?',
+      variantsOfAnswer: {
+        a: 'Убежал',
+        b: 'Испугался',
+        c: 'Травку щипал',
+        d: 'Пошёл гулять',
+      },
+      trueAnswer: 'c',
+    },
+
+    {
+      question: 'Где лучше всего кодить на JS?',
+      variantsOfAnswer: {
+        a: 'JSfiddle',
+        b: 'codepen',
+        c: 'На ноуте',
+        d: 'В басейне под водой',
+      },
+      trueAnswer: 'd',
+    },
+
+    {
+      question: 'Через что проходит вебинар по JS1?',
+      variantsOfAnswer: {
+        a: 'YouTube',
+        b: 'ClickMeeting',
+        c: 'Skype',
+        d: 'Viber',
+      },
+      trueAnswer: 'a',
+    },
+
+  ];
+
+  /**
+   * Объект игры, здесь будут все методы и свойства связанные с самой игрой в общем.
+   * @property {allQuestions} Вопросы игры
+   * @property {int} numberOfQuestion Номер вопроса по порядку
+   * @property {int} countTrueAnswer Количество верных ответов,
+   * @property {string} playerName Имя игрока
+   */
+  const game = {
+    allQuestions,
+    numberOfQuestion: null,
+    countTrueAnswer: null,
+    playerName: null,
+
+    /**
+     * Функция получающая имя игрока, либо если имя не введено возвращает Anonymous
+     * @return {string} Возвращаем имя игрока
+     */
+    getPlayerName() {
+      const name = prompt('Введите своё имя:');
+      if (name) {
+        return name;
+      } else {
+        return 'Anonymous';
+      }
+      //тернарное условие не работает пащимута
+      //name ? return name : return 'Anonymous';
+    },
+
+    /**
+     * Сброс номера вопроса, количества верных ответов и получение имени игрока
+     * @return {void}
+     */
+    initialization() {
+      this.numberOfQuestion = 1;
+      this.countTrueAnswer = 0;
+
+      //Спрашивает имя только 1 раз, чтобы игрок играя ещё раз не вводил имя.
+      if (!this.playerName) {
+        this.playerName = this.getPlayerName();
+      }
+    },
+
+    /**
+     * Получаем текущий вопрос с номером, и варианты ответа с новой строки каждый
+     * @return {string} Возвращает вопрос и варианты ответа
+     */
+    giveQuestion() {
+      return `Вопрос ${this.numberOfQuestion}: ${this.allQuestions[this.numberOfQuestion - 1].question}
+        1: ${this.allQuestions[this.numberOfQuestion - 1].variantsOfAnswer.a}
+        2: ${this.allQuestions[this.numberOfQuestion - 1].variantsOfAnswer.b}
+        3: ${this.allQuestions[this.numberOfQuestion - 1].variantsOfAnswer.c}
+        4: ${this.allQuestions[this.numberOfQuestion - 1].variantsOfAnswer.d}`;
+    },
+
+    /**
+     * Получаем определенный ответ 1,2,3,4 или 0 для выхода
+     * @return {number} Введенное пользователем число
+     */
+    getChoose() {
+      //Варианты выбора для пользователя
+      const availableChoose = [0, 1, 2, 3, 4];
+      //Мучать юзера пока не получим один из допустимых вариантов
+      while (true) {
+        const _choose = parseInt(prompt(`${this.giveQuestion()} \nУважаемый, ${this.playerName}, введите вариант ответа или ${availableChoose[0]} для выхода.`));
+
+        if (!availableChoose.includes(_choose)) {
+          alert(`Для продолжения нужно выбрать что то из: ${availableChoose.join(', ')}.`);
+          continue;
+        }
+
+        return _choose;
+      }
+    },
+
+    /**
+     * Вывод сообщения о количестве верных ответов и процентной составляющей
+     * @return {void}
+     */
+    score() {
+      let count = this.countTrueAnswer;
+
+      //получаем верное окончание слова "Вопрос"
+      switch (count) {
+        case 1:
+          count = 'вопрос';
+          break;
+        case 2:
+        case 3:
+        case 4:
+          count = 'вопроса';
+          break;
+        default:
+          count = 'вопросов';
+      }
+
+      alert(`${this.playerName}, вы ответили верно на ${this.countTrueAnswer} ${count}, что составило
+        ${this.countTrueAnswer / this.allQuestions.length * 100}%`);
+    },
+
+    /**
+     * Конец игры если вопросы кончились
+     * @return {boolean} true если кончились, false если нет
+     */
+    isGameOver() {
+      if (this.numberOfQuestion > this.allQuestions.length) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    /**
+     * Проверка выбора пользователя ( в том числе верности ответа)
+     * @param _choose
+     * @return {boolean}
+     */
+    checkChoose(_choose) {
+      //Если ввели 0 то выходим
+      if (_choose === 0) {
+        return true;
+      }
+
+      //для удобства переводим варианты ответа из букв в цифры, сам не знаю зачем так сделал, можно ж сразу
+      //цыфры было указать ))) Это всё файлы hint их надо скидывать когда уже человек просит =)
+      //будем считать это приведением ответа юзера к коду программы :D
+      let trueAnswer = this.allQuestions[this.numberOfQuestion - 1].trueAnswer;
+      switch (trueAnswer) {
+        case 'a':
+          trueAnswer = 1;
+          break;
+        case 'b':
+          trueAnswer = 2;
+          break;
+        case 'c':
+          trueAnswer = 3;
+          break;
+        case 'd':
+          trueAnswer = 4;
+          break;
+      }
+
+      //Если от верный то увеличиваем кол-во верных ответов и номер вопроса, если нет то только номер вопроса
+      if (trueAnswer === _choose) {
+        this.countTrueAnswer++;
+        this.numberOfQuestion++;
+        alert(`И это верный ответ, ${this.playerName}`);
+      } else {
+        this.numberOfQuestion++;
+        alert(`Не правильно ты, дядя ${this.playerName}, бутерброд ешь`);
+      }
+
+      //Проверим не кончились ли вопросы
+      if (this.isGameOver()) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    /**
+     * Проверим хочет ли пользователь выйти из программы или ещё сыграть
+     * @return {boolean} Возвращаем true если выходит, false если нет
+     */
+    isExit() {
+      //Варианты ответа
+      const availableChoose = [0, 1];
+
+      //Пока не получим нужный ответ продолжаем ввод
+      while (true) {
+        const answer = parseInt(prompt('Хотите выйти? 1 - да, 0 - нет'));
+
+        if (!availableChoose.includes(answer)) {
+          continue;
+        }
+
+        if (answer === 1) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    },
+
+    /**
+     * Основной метод объекта, объявляет переменную выбора, переменную выхода
+     * Первый цикл выполняет инициализацию, и запускает цикл перебора вопросов.
+     */
+    run() {
+      let choose;
+      let wantExit = false;
+      while (!wantExit) {
+        this.initialization();
+
+        while (!wantExit) {
+          choose = this.getChoose();
+          wantExit = this.checkChoose(choose);
+        }
+
+        this.score();
+        wantExit = this.isExit();
+      }
+
+    },
+
+  };
+
+  //старт игры
+  game.run();
+</script>
+</body>
+</html>
