@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lam_1.xml" afterDir="false" />
+    <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="Домашка 5 начало">
+      <change afterPath="$PROJECT_DIR$/05/chessmate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/formCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/style.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/work1-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/work2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fromteacher/бродилка/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fromteacher/бродилка/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/work1.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/work1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +22,62 @@
     <session id="1606320764">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="619" />
+          <entry key="js" value="6640" />
+          <entry key="sass" value="58" />
+          <entry key="txt" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="620" />
+          <entry key="JavaScript" value="6639" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Sass" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="5" />
+          <entry key="js" value="6" />
+          <entry key="sass" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="5" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Sass" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5796875">
+    <splitter split-orientation="horizontal" split-proportion="0.57516736">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/04/work1.html">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/05/work1-2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+                <state relative-caret-position="357">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/04/work3.html">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/05/work2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="288" column="7" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="7" />
+                <state relative-caret-position="272">
+                  <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -48,11 +86,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/04/work2.html">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fromteacher/бродилка/game.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+                <state relative-caret-position="976">
+                  <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/05/formCheck.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="571">
+                  <caret line="153" column="32" lean-forward="true" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -74,6 +130,8 @@
     <findStrings>
       <find>isGameOver</find>
       <find>увад</find>
+      <find>back</find>
+      <find>idButton</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -103,6 +161,13 @@
         <option value="$PROJECT_DIR$/04/work2.html" />
         <option value="$PROJECT_DIR$/04/work3.html" />
         <option value="$PROJECT_DIR$/04/work1.html" />
+        <option value="$PROJECT_DIR$/fromteacher/бродилка/index.html" />
+        <option value="$PROJECT_DIR$/05/work1.html" />
+        <option value="$PROJECT_DIR$/05/chessmate.js" />
+        <option value="$PROJECT_DIR$/05/style.sass" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/05/work2.html" />
+        <option value="$PROJECT_DIR$/05/formCheck.js" />
       </list>
     </option>
   </component>
@@ -126,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,11 +199,26 @@
               <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS1" type="462c0819:PsiDirectoryNode" />
+              <item name="05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS1" type="462c0819:PsiDirectoryNode" />
+              <item name="fromteacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS1" type="462c0819:PsiDirectoryNode" />
+              <item name="fromteacher" type="462c0819:PsiDirectoryNode" />
+              <item name="бродилка" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,6 +244,8 @@
       <recent name="D:\GitHub\JS1\02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\JS1\fromteacher\бродилка" />
+      <recent name="D:\GitHub\JS1\fromteacher" />
       <recent name="D:\GitHub\JS1\04" />
       <recent name="D:\GitHub\JS1\01" />
     </key>
@@ -205,7 +288,8 @@
       <workItem from="1532969974617" duration="6000" />
       <workItem from="1533019372798" duration="24946000" />
       <workItem from="1533219613231" duration="367000" />
-      <workItem from="1533220118516" duration="1955000" />
+      <workItem from="1533220118516" duration="20750000" />
+      <workItem from="1533475338460" duration="9380000" />
     </task>
     <task id="LOCAL-00001" summary="ЦЕльсии в фаренгейты">
       <created>1532068305376</created>
@@ -333,16 +417,24 @@
       <option name="project" value="LOCAL" />
       <updated>1533201209841</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Домашка 5 начало">
+      <created>1533278735553</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533278735553</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71881000" />
+    <option name="totallyTimeSpent" value="100056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -354,8 +446,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49927744" weight="0.3295711" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49927744" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007225" side_tool="true" weight="0.3295711" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32943678" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -407,7 +499,8 @@
     <MESSAGE value="Домашка 4 задание 2 начало" />
     <MESSAGE value="Домашка 4 задание 2 выполнена" />
     <MESSAGE value="Домашка 4 выполнена" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашка 4 выполнена" />
+    <MESSAGE value="Домашка 5 начало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашка 5 начало" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/style.sass" />
@@ -531,24 +624,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/04/work1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/04/work3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="777">
           <caret line="288" column="7" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04/work2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="218">
           <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04/work1.html">
+    <entry file="file://$PROJECT_DIR$/fromteacher/бродилка/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05/chessmate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="149" column="9" lean-forward="true" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05/work1-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fromteacher/бродилка/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05/work2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05/formCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="153" column="32" lean-forward="true" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
         </state>
       </provider>
     </entry>
