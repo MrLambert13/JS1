@@ -163,3 +163,8 @@ const params = {
 
 //вещаем слушателя событий на отправку формы
 params.elementForm.addEventListener('submit', (event) => params.mainCheck(event));
+
+for (const param of this.mapValues[row]) {
+  value += param;
+}
+return value === "XXX" || value === "000";
