@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="Домашка 6-1">
-      <change afterPath="$PROJECT_DIR$/06/card/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06/card/index.html" afterDir="false" />
+    <list default="true" id="b4046510-6ba2-465e-af5d-4592ab37d033" name="Default" comment="Домашка 6-3 ступор на листании вправо">
+      <change afterPath="$PROJECT_DIR$/06/ОТВЕТ на 4 задание" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/gallery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/gallery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06/gallery/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/06/gallery/js.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,27 +16,28 @@
     <session id="1606320764">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="775" />
-          <entry key="js" value="10720" />
+          <entry key="html" value="777" />
+          <entry key="js" value="11183" />
           <entry key="sass" value="58" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="776" />
-          <entry key="JavaScript" value="10719" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="HTML" value="778" />
+          <entry key="JavaScript" value="11182" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="Sass" value="58" />
         </counts>
       </usages-collector>
@@ -47,12 +46,14 @@
           <entry key="html" value="9" />
           <entry key="js" value="11" />
           <entry key="sass" value="3" />
+          <entry key="ОТВЕТ на 4 задание" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="11" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Sass" value="3" />
         </counts>
       </usages-collector>
@@ -65,8 +66,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/06/gallery/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+                <state relative-caret-position="187">
+                  <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -84,11 +85,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/06/gallery/js.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1010">
-                  <caret line="151" column="47" lean-forward="true" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+                <state relative-caret-position="493">
+                  <caret line="38" column="42" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/06/ОТВЕТ на 4 задание">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret column="237" selection-start-column="237" selection-end-column="237" />
                 </state>
               </provider>
             </entry>
@@ -96,8 +106,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/06/card/card.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="551">
-                  <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+                <state relative-caret-position="969">
+                  <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -106,7 +116,7 @@
             <entry file="file://$PROJECT_DIR$/06/tictaktoe/js.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1462">
-                  <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+                  <caret line="86" selection-start-line="86" selection-end-line="86" />
                 </state>
               </provider>
             </entry>
@@ -171,6 +181,7 @@
         <option value="$PROJECT_DIR$/06/card/index.html" />
         <option value="$PROJECT_DIR$/06/card/card.js" />
         <option value="$PROJECT_DIR$/06/gallery/index.html" />
+        <option value="$PROJECT_DIR$/06/ОТВЕТ на 4 задание" />
         <option value="$PROJECT_DIR$/06/gallery/js.js" />
       </list>
     </option>
@@ -212,34 +223,6 @@
               <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS1" type="462c0819:PsiDirectoryNode" />
               <item name="06" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS1" type="462c0819:PsiDirectoryNode" />
-              <item name="06" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS1" type="462c0819:PsiDirectoryNode" />
-              <item name="06" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS1" type="462c0819:PsiDirectoryNode" />
-              <item name="06" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS1" type="462c0819:PsiDirectoryNode" />
-              <item name="06" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,16 +265,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\JS1\04" />
-      <recent name="D:\GitHub\JS1\03" />
-      <recent name="D:\GitHub\JS1\02" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\JS1\fromteacher\бродилка" />
       <recent name="D:\GitHub\JS1\fromteacher" />
       <recent name="D:\GitHub\JS1\04" />
       <recent name="D:\GitHub\JS1\01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\JS1\04" />
+      <recent name="D:\GitHub\JS1\03" />
+      <recent name="D:\GitHub\JS1\02" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,7 +320,8 @@
       <workItem from="1533581194708" duration="1780000" />
       <workItem from="1533641939192" duration="12324000" />
       <workItem from="1533763290942" duration="3934000" />
-      <workItem from="1533788913478" duration="621000" />
+      <workItem from="1533788913478" duration="1229000" />
+      <workItem from="1533790290725" duration="4452000" />
     </task>
     <task id="LOCAL-00001" summary="ЦЕльсии в фаренгейты">
       <created>1532068305376</created>
@@ -493,17 +477,24 @@
       <option name="project" value="LOCAL" />
       <updated>1533753706001</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Домашка 6-3 ступор на листании вправо">
+      <created>1533789725760</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533789725760</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118890000" />
+    <option name="totallyTimeSpent" value="123950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13059701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -572,7 +563,8 @@
     <MESSAGE value="Домашка 5 начало" />
     <MESSAGE value="Домашка 5 закончил" />
     <MESSAGE value="Домашка 6-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашка 6-1" />
+    <MESSAGE value="Домашка 6-3 ступор на листании вправо" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашка 6-3 ступор на листании вправо" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/style.sass" />
@@ -767,20 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06/tictaktoe/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06/card/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/06/card/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -788,17 +766,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/06/card/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06/tictaktoe/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/06/gallery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="187">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06/gallery/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="151" column="47" lean-forward="true" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+        <state relative-caret-position="493">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06/ОТВЕТ на 4 задание">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret column="237" selection-start-column="237" selection-end-column="237" />
         </state>
       </provider>
     </entry>

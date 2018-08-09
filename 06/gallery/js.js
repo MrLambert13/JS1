@@ -28,7 +28,9 @@ const gallery = {
     // Записываем настройки, которые передал пользователь в наши настройки.
     Object.assign(this.settings, userSettings);
 
+    //get and save NodeList with image which have 'data-full_image_url' atribut
     this.imageCollections = document.querySelectorAll('[data-full_image_url]');
+
     // Находим элемент, где будут превью картинок и ставим обработчик на этот элемент,
     // при клике на этот элемент вызовем функцию containerClickHandler в нашем объекте
     // gallery и передадим туда событие MouseEvent, которое случилось.
@@ -57,7 +59,12 @@ const gallery = {
    * @param {string} src Ссылка на картинку, которую надо открыть.
    */
   openImage(src) {
-    this.openedImageCurrent = src;
+    //is open image in the image collections or not
+    for (const idx in Object.keys(this.imageCollections)) {
+      if (this.imageCollections[idx].dataset.full_image_url === src) {
+        this.openedImageCurrent = src;
+      }
+    }
 
     // Получаем контейнер для открытой картинки, в нем находим тег img и ставим ему нужный src.
     this.getScreenContainer().querySelector(`.${this.settings.openedImageClass}`).src = src;
@@ -84,6 +91,7 @@ const gallery = {
    * @returns {HTMLElement}
    */
   createScreenContainer() {
+
     // Создаем сам контейнер-обертку и ставим ему класс.
     const galleryWrapperElement = document.createElement('div');
     galleryWrapperElement.classList.add(this.settings.openedImageWrapperClass);
@@ -131,11 +139,13 @@ const gallery = {
    * Open previous image
    */
   leftClick() {
-    for (const idx in this.imageCollections) {
-      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent
-        && idx > 0) {
-        console.log(idx-1);
-        this.openImage(this.imageCollections[idx - 1].dataset.full_image_url);
+    for (const idx in Object.keys(this.imageCollections)) {
+      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent) {
+        if (idx === '0') {
+          this.openImage(this.imageCollections[this.imageCollections.length - 1].dataset.full_image_url);
+        } else {
+          this.openImage(this.imageCollections[idx - 1].dataset.full_image_url);
+        }
         return;
       }
     }
@@ -145,13 +155,13 @@ const gallery = {
    * Open next image
    */
   rightClick() {
-    for (const idx in this.imageCollections) {
-      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent
-        && idx < this.imageCollections.length) {
-        console.log(this.imageCollections);
-        //без parseint происходит конкантенация
-        console.log(parseInt(idx)+1);
-        this.openImage(this.imageCollections[idx+1].dataset.full_image_url);
+    for (const idx in Object.keys(this.imageCollections)) {
+      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent) {
+        if (+idx === this.imageCollections.length - 1) {
+          this.openImage(this.imageCollections[0].dataset.full_image_url);
+        } else {
+          this.openImage(this.imageCollections[parseInt(idx) + 1].dataset.full_image_url);
+        }
         return;
       }
     }
