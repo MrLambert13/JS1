@@ -8,6 +8,7 @@
  * @property {string} settings.openedImageScreenClass Класс для ширмы открытой картинки.
  * @property {string} settings.openedImageCloseBtnClass Класс для картинки кнопки закрыть.
  * @property {string} settings.openedImageCloseBtnSrc Путь до картинки кнопки открыть.
+ * @property {string} setting.openedNoImage Путь до картинки-заглушки
  */
 const gallery = {
   settings: {
@@ -17,7 +18,6 @@ const gallery = {
     openedImageScreenClass: 'galleryWrapper__screen',
     openedImageCloseBtnClass: 'galleryWrapper__close',
     openedImageCloseBtnSrc: 'images/gallery/close.png',
-    openedNoImage: 'images/gallery/no_image.jpg',
   },
 
   /**
@@ -28,6 +28,7 @@ const gallery = {
     // Записываем настройки, которые передал пользователь в наши настройки.
     Object.assign(this.settings, userSettings);
 
+    this.imageCollections = document.querySelectorAll('[data-full_image_url]');
     // Находим элемент, где будут превью картинок и ставим обработчик на этот элемент,
     // при клике на этот элемент вызовем функцию containerClickHandler в нашем объекте
     // gallery и передадим туда событие MouseEvent, которое случилось.
@@ -47,8 +48,6 @@ const gallery = {
       return;
     }
     // Открываем картинку с полученным из целевого тега (data-full_image_url аттрибут).
-    //ЗАДАНИЕ №1
-
     this.openImage(event.target.dataset.full_image_url);
 
   },
@@ -58,6 +57,8 @@ const gallery = {
    * @param {string} src Ссылка на картинку, которую надо открыть.
    */
   openImage(src) {
+    this.openedImageCurrent = src;
+
     // Получаем контейнер для открытой картинки, в нем находим тег img и ставим ему нужный src.
     this.getScreenContainer().querySelector(`.${this.settings.openedImageClass}`).src = src;
   },
@@ -101,16 +102,59 @@ const gallery = {
 
     // Создаем картинку, которую хотим открыть, ставим класс и добавляем ее в контейнер-обертку.
     const image = new Image();
-    //обработчик ошибки открытия картинки
+    //ЗАДАНИЕ №1
     image.onerror = () => this.openImage(this.settings.openedNoImage);
+
     image.classList.add(this.settings.openedImageClass);
     galleryWrapperElement.appendChild(image);
+
+    //add arrows navigation
+    const arrowLeft = new Image();
+    arrowLeft.classList.add(this.settings.openedArrowClass, this.settings.openedLeftArrowClass);
+    arrowLeft.src = this.settings.openedLeftArrow;
+    galleryWrapperElement.appendChild(arrowLeft);
+    arrowLeft.addEventListener('click', () => this.leftClick());
+    const arrowRight = new Image();
+    arrowRight.classList.add(this.settings.openedArrowClass, this.settings.openedRightArrowClass);
+    arrowRight.src = this.settings.openedRightArrow;
+    galleryWrapperElement.appendChild(arrowRight);
+    arrowRight.addEventListener('click', () => this.rightClick());
 
     // Добавляем контейнер-обертку в тег body.
     document.body.appendChild(galleryWrapperElement);
 
     // Возвращаем добавленный в body элемент, наш контейнер-обертку.
     return galleryWrapperElement;
+  },
+
+  /**
+   * Open previous image
+   */
+  leftClick() {
+    for (const idx in this.imageCollections) {
+      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent
+        && idx > 0) {
+        console.log(idx-1);
+        this.openImage(this.imageCollections[idx - 1].dataset.full_image_url);
+        return;
+      }
+    }
+  },
+
+  /**
+   * Open next image
+   */
+  rightClick() {
+    for (const idx in this.imageCollections) {
+      if (this.imageCollections[idx].dataset.full_image_url === this.openedImageCurrent
+        && idx < this.imageCollections.length) {
+        console.log(this.imageCollections);
+        //без parseint происходит конкантенация
+        console.log(parseInt(idx)+1);
+        this.openImage(this.imageCollections[idx+1].dataset.full_image_url);
+        return;
+      }
+    }
   },
 
   /**
@@ -122,4 +166,16 @@ const gallery = {
 };
 
 // Инициализируем нашу галерею при загрузке страницы.
-window.onload = () => gallery.init({previewSelector: '.galleryPreviewsContainer'});
+window.onload = () => gallery.init(
+  {
+    previewSelector: '.galleryPreviewsContainer',
+    openedNoImage: 'images/gallery/no_image.jpg',
+    openedArrowClass: 'galleryWrapper__arrow',
+    openedLeftArrow: 'images/gallery/leftarrowincircle.png',
+    openedLeftArrowClass: 'galleryWrapper__arrow_left',
+    openedRightArrow: 'images/gallery/rightarrowincircle.png',
+    openedRightArrowClass: 'galleryWrapper__arrow_right',
+    openedImageCurrent: null,
+    imageCollections: null,
+  }
+);
